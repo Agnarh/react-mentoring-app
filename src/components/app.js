@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './header/headerComponent';
 import CategoryTree from './categoryTree/categoryTreeComponent';
-import Details from './details/detailsComponent';
+import ToDoList from './todoList/todoListComponent';
 
 var App = function (props) {
     return (
@@ -16,7 +16,7 @@ var App = function (props) {
                     <CategoryTree />
                 </div>
                 <div className="col-xs-8">
-                    <Details />
+                    <ToDoList />
                 </div>
             </div>
         </div>
