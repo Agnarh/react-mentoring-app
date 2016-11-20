@@ -6,8 +6,11 @@
     "react-scripts": "0.7.0"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "react": "^15.4.0",
-    "react-dom": "^15.4.0"
+    "react-bootstrap": "^0.30.6",
+    "react-dom": "^15.4.0",
+    "react-router": "^3.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -16,7 +19,7 @@
     "eject": "react-scripts eject"
   },
   "repository": {
-      "type": "git",
-      "url": "https://github.com/Agnarh/react-mentoring-app"
+    "type": "git",
+    "url": "https://github.com/Agnarh/react-mentoring-app"
   }
 }
