@@ -1,6 +1,7 @@
 import React from 'react';
 import _ from 'ramda';
 import TodoListItem from './todoListItemComponent';
+import InputWithButton from '../common/inputWithButtonComponent';
 
 var ToDoList = React.createClass({
     getInitialState: function () {
@@ -24,6 +25,16 @@ var ToDoList = React.createClass({
         });
         this.setState({ todos });
     },
+    onTodoAdd: function (title) {
+        var todos = this.state.todos,
+            newItem = {
+                id: Math.floor(Math.random() * 10000),
+                title: title,
+                isDone: false
+            };
+
+        this.setState({ todos: [...todos, newItem] });
+    },
     renderTodoItem: function (item) {
         return (
             <TodoListItem key={item.id} item={item} onTodoCheck={this.onTodoCheck} />
@@ -31,9 +42,16 @@ var ToDoList = React.createClass({
     },
     render: function () {
         return (
-            <ul className="list-group">
-                {this.state.todos.map(this.renderTodoItem)}
-            </ul>
+            <div className="row">
+                <div className="col-xs-6 col-xs-offset-6">
+                    <InputWithButton onClickHandler={this.onTodoAdd}/>
+                </div>
+                <div className="col-xs-12">
+                    <ul className="list-group">
+                        {this.state.todos.map(this.renderTodoItem)}
+                    </ul>
+                </div>
+            </div>
         );
     }
 });
