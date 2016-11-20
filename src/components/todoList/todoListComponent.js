@@ -1,5 +1,4 @@
 import React from 'react';
-import _ from 'ramda';
 import TodoListItem from './todoListItemComponent';
 import InputWithButton from '../common/inputWithButtonComponent';
 

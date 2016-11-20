@@ -11,8 +11,9 @@ var HeaderComponent = function (props) {
                 <div className="col-xs-8 search-field">
                     <div className="form-inline pull-right">
                         <div className="form-group">
-                            <label className="checkbox-inline">
-                                <input type="checkbox" id="showActiveChbx" />&nbsp;Show active&nbsp;
+                            <label className="checkbox-inline pr-5 pl-5">
+                                <input type="checkbox" />
+                                Show active
                             </label>
                         </div>
                         <div className="form-group">

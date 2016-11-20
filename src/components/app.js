@@ -12,10 +12,10 @@ var App = function (props) {
                 </div>
             </div>
             <div className="row">
-                <div className="col-xs-4">
+                <div className="col-xs-5">
                     <CategoryTree />
                 </div>
-                <div className="col-xs-8">
+                <div className="col-xs-7">
                     <ToDoList />
                 </div>
             </div>

@@ -1,3 +1,11 @@
+.pr-5 {
+    padding-right: 5px;
+}
+
+.pl-5 {
+    padding-left: 5px;
+}
+
 .todo-item {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -9,4 +17,14 @@
 
 .text-field-group {
     margin-bottom: 10px;
+}
+
+.list-group-item .category-group {
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-right: -15px;
+}
+
+.list-group-item .category-group .list-group-item {
+    border-right: none;
 }

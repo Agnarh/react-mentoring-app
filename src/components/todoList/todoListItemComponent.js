@@ -16,11 +16,11 @@ var TodoListItem = React.createClass({
                             checked={item.isDone}
                             onChange={this.onChangeHandler} />
                     </div>
-                    <div className="col-xs-10">
+                    <div className="col-xs-9">
                         <strong>{item.title}</strong>
                     </div>
-                    <div className="col-xs-1">
-                        <a href="/"><span className="glyphicon glyphicon-edit"></span></a>
+                    <div className="col-xs-2">
+                        <button type="button" className="btn btn-default btn-xs"><span className="glyphicon glyphicon-edit"></span></button>
                     </div>
                 </div>
             </li>
